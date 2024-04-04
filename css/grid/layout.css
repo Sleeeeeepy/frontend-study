@@ -1,0 +1,46 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 100px auto 50px;
+    grid-template-areas: 
+    'header header'
+    'main side'
+    'footer footer';
+
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: white;
+}
+
+header {
+    background-color: black;
+    grid-area: header;
+    color: white;
+}
+
+aside {
+    grid-area: side;
+    background-color: #ff9d00;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    background-color: black;
+    color: white;
+}
+
+header,
+footer,
+aside,
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
