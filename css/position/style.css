@@ -1,0 +1,23 @@
+.container {
+    width: 300px;
+    height: 2000px;
+    background-color: darkgray;
+}
+
+.container > div {
+    width: 200px;
+    background-color: yellowgreen;
+    text-align: center;
+    position: relative;
+}
+
+.container > div:first-child {
+    position: sticky;
+    /* 방향을 설정할 수 있다. */
+    top: 0;
+    
+}
+
+.container > div:nth-child(2) {
+    position: absolute;
+}
